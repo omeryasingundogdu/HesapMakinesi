@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 style="color: rgb(255, 255, 255)"></h1>
+    <div id="hesapMakinesi">
+      <div id="ekran">
+        <input type="text" id="sonuc" placeholder="İşlem giriniz." />
+        <button onclick="kopyala()" id="kopyala1">copy!</button>
+      </div>
+      <div id="sayilar">
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="7"
+          onclick="ekle('7')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="8"
+          onclick="ekle('8')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="9"
+          onclick="ekle('9')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer; background-color: blue"
+          value="+"
+          onclick="operathor('+')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="4"
+          onclick="ekle('4')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="5"
+          onclick="ekle('5')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="6"
+          onclick="ekle('6')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer; background-color: blue"
+          value="-"
+          onclick="operathor('-')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="1"
+          onclick="ekle('1')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="2"
+          onclick="ekle('2')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="3"
+          onclick="ekle('3')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer; background-color: blue"
+          value="*"
+          onclick="operathor('*')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="0"
+          onclick="ekle('0')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer"
+          value="00"
+          onclick="ekle('00')"
+        />
+        <input
+          type="button"
+          style="cursor: pointer; background-color: blue"
+          value="/"
+          onclick="operathor('/')"
+        />
+        <input
+          type="button"
+          id="esittir"
+          style="
+            cursor: pointer;
+            color: black;
+            background-color: rgb(0, 255, 42);
+          "
+          value="="
+        />
+        <input
+          type="button"
+          style="cursor: help; background-color: crimson"
+          value="clear"
+          onclick="sil(' ')"
+        />
+        <input
+          type="button"
+          style="cursor: help; background-color: brown"
+          value="full clear"
+          onclick="fullSil('')"
+        />
+        <input
+          type="button"
+          style="cursor: help; background-color: rgb(191, 105, 43)"
+          value="pi"
+          onclick="pi('math.pi')"
+        />
+        <input
+          type="button"
+          style="cursor: help; background-color: rgb(191, 105, 43)"
+          value="?"
+          onclick="leblebi('leblebi') , alert('leblebi')"
+        />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
